@@ -28,12 +28,16 @@ body {
     padding-bottom: 125px;
 }
 
-.hero img {
+#mobile-hero {
     width: 240px;
     margin-top: -110px;
     margin-left: -120px;
     position: absolute;
 } 
+
+#desktop-hero {
+    display: none;
+}
 
 .container {
     background-color: #fff;
@@ -90,5 +94,38 @@ body {
     margin-top: 1rem;
     font-size: .7rem;
     max-width: 90%;
+}
+
+@media only screen and (min-width: 1440px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 7em 15em;
+        padding: 0;
+    }
+
+    .hero {
+        background-image: url(./images/bg-pattern-desktop.svg);
+        padding: 0;
+    }
+
+    #mobile-hero {
+        display: none;
+    }
+
+    #desktop-hero {
+        display: block;
+    }
+
+    .title {
+        text-align: left;
+        border: 1px solid red;
+    }
+
+    .faq {
+        margin: 5em 8em 5em 0;
+        width: 50%;
+    }
 }
 
