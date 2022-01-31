@@ -17,6 +17,7 @@
 body {
     background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .hero {
@@ -35,7 +36,8 @@ body {
     position: absolute;
 } 
 
-#desktop-hero {
+#desktop-hero,
+#box {
     display: none;
 }
 
@@ -103,11 +105,19 @@ body {
         align-items: center;
         margin: 7em 15em;
         padding: 0;
+        
     }
 
     .hero {
         background-image: url(./images/bg-pattern-desktop.svg);
         padding: 0;
+        width: 50%;
+        background-size: 50%;
+        border: 1px red solid;
+    }
+
+    #wrap {
+       overflow: hidden;
     }
 
     #mobile-hero {
@@ -116,16 +126,22 @@ body {
 
     #desktop-hero {
         display: block;
+        margin-left: -75px;
+    }
+
+    #box {
+        z-index: 50;
+        display: block;
+        margin: -225px 0 0 -80px;
     }
 
     .title {
         text-align: left;
-        border: 1px solid red;
-    }
+    } 
 
     .faq {
-        margin: 5em 8em 5em 0;
-        width: 50%;
+        /* margin: 5em 8em 5em 0; */
+        max-width: 50%;
     }
 }
 
