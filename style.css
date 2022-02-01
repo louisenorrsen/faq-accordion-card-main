@@ -45,7 +45,7 @@ body {
 .container {
     background-color: #fff;
     border-radius: 2em;
-    margin: 7.5em 2em;
+    margin: 8.5em 2em;
     padding: 0 1.5em 2em 1.5em;
     width: 335px;
 }
@@ -145,7 +145,7 @@ body {
     } 
 
     .faq {
-        margin: 5em 6em 5em 0;
+        margin: 5em 5em 5em 0;
         width: 350px;
     }
 }
