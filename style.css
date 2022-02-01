@@ -17,9 +17,10 @@
 body {
     background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     background-repeat: no-repeat;
-    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
-
 .hero {
     background-image: url(./images/bg-pattern-mobile.svg);
     background-repeat: no-repeat;
@@ -46,6 +47,7 @@ body {
     border-radius: 2em;
     margin: 9.5em 2em;
     padding: 0 1.5em 2em 1.5em;
+    width: 335px;
 }
 
 .row {
@@ -103,21 +105,23 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 7em 15em;
         padding: 0;
-        
+        width: 920px;
+        min-height: 509px;
+        background-image: url(./images/bg-pattern-desktop.svg);
+        background-size: 964px 944px;
+        background-position: -570px -290px;
+        background-repeat: no-repeat;
     }
 
     .hero {
-        background-image: url(./images/bg-pattern-desktop.svg);
         padding: 0;
-        width: 50%;
-        background-size: 50%;
-        border: 1px red solid;
+        background-image: none;
     }
 
     #wrap {
        overflow: hidden;
+       margin: auto 0;
     }
 
     #mobile-hero {
@@ -126,7 +130,8 @@ body {
 
     #desktop-hero {
         display: block;
-        margin-left: -75px;
+        margin: auto 0 auto -75px;
+        width: 472px;
     }
 
     #box {
@@ -140,8 +145,8 @@ body {
     } 
 
     .faq {
-        /* margin: 5em 8em 5em 0; */
-        max-width: 50%;
+        margin: 5em 8em 5em 0;
+        width: 350px;
     }
 }
 
